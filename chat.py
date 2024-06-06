@@ -17,7 +17,7 @@ import warnings
 os.environ['PINECONE_API_KEY'] = st.secrets['PINECONE_API_KEY'] 
 os.environ['GROQ_API_KEY'] = st.secrets['GROQ_API_KEY'] 
 warnings.filterwarnings("ignore")
-st.title("ChatGPT-like clone")
+st.title("RAG chatbot")
 
 
 chain_types = ['stuff',"refine", "map_reduce", "map_rerank"]
