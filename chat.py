@@ -214,7 +214,7 @@ if 'initialized' not in st.session_state or st.session_state.selected_chain_type
     
     # Setup Pinecone
     pc = Pinecone(api_key=os.environ['PINECONE_API_KEY'])
-    index_name = "docs-rag-chatbot"
+    index_name = "badrchatbot"
     if index_name not in pc.list_indexes().names():
         pc.create_index(name=index_name, dimension=384, metric="cosine", spec=ServerlessSpec(cloud="aws", region="us-east-1"))
 
